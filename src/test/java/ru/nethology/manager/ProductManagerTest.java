@@ -17,6 +17,7 @@ class ProductManagerTest {
     Book third = new Book(3, "Book3", 500, "Golov");
     Smartphone fourth = new Smartphone(4,"Nokia", 9900, "Russia");
     Smartphone fifth = new Smartphone(5,"Nokia", 11300, "Finland");
+
     @BeforeEach
     public void setUp(){
         manager.add(first);
@@ -44,7 +45,7 @@ class ProductManagerTest {
     @Test
     public void shouldLookForASmartphone() {
         Product[] expected = new Product[]{fourth};
-        Product[] actual = manager.searchBy("Nokia");
+        Product[] actual = manager.searchBy("Russia");
 
         assertArrayEquals(expected, actual);
     }
