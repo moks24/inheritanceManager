@@ -58,12 +58,6 @@
                             <goal>report</goal>
                         </goals>
                     </execution>
-                    <execution>
-                        <id>check</id>
-                        <phase>verify</phase>
-                        <goals>
-                        </goals>
-                    </execution>
                 </executions>
                 <configuration>
                     <rules>
